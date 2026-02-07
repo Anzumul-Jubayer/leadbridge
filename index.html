@@ -8,7 +8,7 @@
   </head>
   <body class="font-oswald">
     <!-- nav and hero -->
-    <section>
+    <section class="nav-hero">
       <!-- nav -->
 
       <nav>
@@ -34,7 +34,72 @@
           </div>
         </div>
       </nav>
+      <!-- hero -->
+      <div class="hero">
+        <!-- income card -->
+        <div class="card income-card">
+          <h2>Total Incomes</h2>
+          <div class="chart-container">
+            <div class="bar-group">
+              <div class="bar" style="height: 70px"></div>
+              <span class="month">Jan</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 100px"></div>
+              <span class="month">Feb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 85px"></div>
+              <span class="month">Mar</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar active" style="height: 110px"></div>
+              <span class="month">Apr</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 50px"></div>
+              <span class="month">May</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 120px"></div>
+              <span class="month">Jun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- main content -->
+        <div class="hero-content">
+          <div class="amazon-badge">
+            <img src="./assets/amazon.png" alt="Amazon" class="amazon-icon">
+            <p>Your Full-Service <span class="orange-text">Amazon Partner</span></p>
+          </div>
+          
+          <h1 class="hero-title">
+            Turn Your Amazon Struggles into Success—Save Time, 
+            <span class="orange-text">Maximize Profits!</span>
+          </h1>
+          
+          <button class="button-primary cta-button">Book a Free Consultation</button>
+        </div>
+
+        <!-- rating card -->
+        <div class="card rating-card">
+          <div class="user-avatars">
+            <div class="avatar" style="background-image: url('./assets/jhon.webp');"></div>
+            <div class="avatar" style="background-image: url('./assets/sam.jpeg');"></div>
+            <div class="avatar" style="background-image: url('./assets/rebeka.jpg');"></div>
+          </div>
+          <div class="rating-info">
+            <h3>45k+ Users</h3>
+            <div class="rating-stars">
+              <span class="star">★</span> 
+              <strong>4.7</strong> Rating
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- js -->
     <script src="script/script.js"></script>
   </body>
 </html>

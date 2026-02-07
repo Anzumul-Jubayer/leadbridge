@@ -23,6 +23,16 @@
   cursor: pointer;
   font-weight: 500;
 }
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+/* nav & hero */
+.nav-hero {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 165, 0, 0.1) 100%);
+}
 
 /* Nav*/
 nav {
@@ -76,10 +86,169 @@ nav {
   background: #000;
 }
 
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 120px;
+  min-height: 500px;
+}
+
+/* Income Card */
+.income-card {
+  width: 220px;
+  transform: rotate(-16deg);
+  flex-shrink: 0;
+}
+
+.income-card h2 {
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  color: #1a1a1a;
+  font-weight: 800;
+}
+
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 28px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  transition: height 0.3s;
+}
+
+.bar.active {
+  background-color: #ffa500;
+}
+
+.month {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+}
+
+/* Hero Content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.amazon-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.amazon-icon {
+  width: 40px;
+  height: auto;
+}
+
+.amazon-badge p {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.orange-text {
+  color: #ffa500;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.1;
+  color: #000;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0;
+}
+
+.cta-button {
+  font-size: 16px;
+  padding: 14px 28px;
+}
+
+/* Rating Card */
+.rating-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  transform: rotate(16deg);
+  flex-shrink: 0;
+}
+
+.user-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.rating-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.star {
+  color: #ffa500;
+  font-size: 18px;
+}
 /*  RESPONSIVE */
 @media (max-width: 1024px) {
   .container {
     padding: 20px 40px;
+  }
+
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .hero-title {
+    font-size: 56px;
   }
 }
 
@@ -112,5 +281,44 @@ nav {
   .nav-links {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .income-card {
+    transform: rotate(0deg);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rating-card {
+    transform: rotate(0deg);
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .amazon-badge p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .amazon-icon {
+    width: 30px;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 14px;
   }
 }
