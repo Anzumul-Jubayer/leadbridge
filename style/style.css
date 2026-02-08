@@ -166,7 +166,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 
 .amazon-icon {
@@ -308,7 +307,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
- 
 }
 
 .story-icon {
@@ -351,174 +349,271 @@ nav {
 
 /* Why Choose Us Section - Dark Theme */
 .why-choose-section {
-    background-color: #121212; /* Dark background as per image */
-    color: #ffffff;
-    padding: 100px 120px;
-    overflow: hidden;
-    position: relative;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 100px 120px;
+  overflow: hidden;
+  position: relative;
 }
 
 .why-choose-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 /* Left Content */
 .choose-left {
-    flex: 1;
+  flex: 1;
 }
 
 .badge-choose {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .amazon-icon-sm {
-    width: 45px;
-    background: #ffa500;
-    border-radius: 5px;
-    padding: 2px;
+  width: 45px;
+  background: #ffa500;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .choose-title {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    text-transform: uppercase;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .choose-description {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #cccccc;
-    margin-bottom: 35px;
-    max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 35px;
+  max-width: 500px;
 }
 
 .choose-btn {
-    padding: 15px 35px;
-    font-size: 18px;
+  padding: 15px 35px;
+  font-size: 18px;
 }
 
 /* Right Content (Visuals & Curves) */
 .choose-right {
-    flex: 1;
-    position: relative;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ellipse-big {
-    position: absolute;
-    right: 10px;
-    height: 110%;
-    z-index: 1;
+  position: absolute;
+  right: 10px;
+  height: 110%;
+  z-index: 1;
 }
 
 .ellipse-small {
-    position: absolute;
-    right: 40px;
-    height: 80%;
-    z-index: 1;
+  position: absolute;
+  right: 40px;
+  height: 80%;
+  z-index: 1;
 }
 
 .center-logo-box {
-    position: relative;
-    z-index: 5;
-    width: 280px;
-    height: 280px;
-    background: #1a1a1a;
-    border-bottom: 3px solid #ffa500;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  position: relative;
+  z-index: 5;
+  width: 280px;
+  height: 280px;
+  background: #1a1a1a;
+  border-bottom: 3px solid #ffa500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.center-logo-box>img {
-    width: 60%;
-    height: 60%;
+.center-logo-box > img {
+  width: 60%;
+  height: 60%;
 }
-
 
 /* Feature Cards on Curve */
 .feature-cards-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .feature-card {
-    position: absolute;
-    background: rgba(40, 40, 40, 0.9);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 25px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    transition: 0.3s;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  background: rgba(40, 40, 40, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .feature-card:hover {
-    border-color: #ffa500;
-    transform: translateX(-5px);
+  border-color: #ffa500;
+  transform: translateX(-5px);
 }
 
 .feature-card:nth-child(1) {
-    top: 8%;
-    right: -10%;
+  top: 8%;
+  right: -10%;
 }
 
 .feature-card:nth-child(2) {
-    top: 32%;
-    right: -18%;
+  top: 32%;
+  right: -18%;
 }
 
 .feature-card:nth-child(3) {
-    bottom: 32%;
-    right: -18%;
+  bottom: 32%;
+  right: -18%;
 }
 
 .feature-card:nth-child(4) {
-    bottom: 8%;
-    right: -10%;
+  bottom: 8%;
+  right: -10%;
 }
 
 .feature-card span {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+/* Services Section */
+.services-section {
+  padding: 80px 120px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.services-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.badge-icon {
+  width: 40px;
+  height: auto;
+}
+
+.services-badge p {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.services-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 50px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffa500;
+  margin: 0;
+}
+
+.service-emoji {
+  font-size: 40px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.service-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffa500;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.service-list li:last-child {
+  margin-bottom: 0;
 }
 
 /* Responsive Styles */
 
 /* Large Tablets and Small Laptops */
 @media (max-width: 1200px) {
-  .why-choose-section { 
-    padding: 60px 60px; 
+  .why-choose-section {
+    padding: 60px 60px;
   }
 
-  .choose-title { 
-    font-size: 44px; 
+  .choose-title {
+    font-size: 44px;
   }
 
-  .choose-right { 
+  .choose-right {
     height: 450px;
   }
 
@@ -569,19 +664,31 @@ nav {
     font-size: 40px;
   }
 
-  .why-choose-section { 
-    padding: 60px 40px; 
+  .services-section {
+    padding: 60px 40px;
   }
 
-  .choose-title { 
-    font-size: 38px; 
+  .services-title {
+    font-size: 40px;
+  }
+
+  .services-grid {
+    gap: 25px;
+  }
+
+  .why-choose-section {
+    padding: 60px 40px;
+  }
+
+  .choose-title {
+    font-size: 38px;
   }
 
   .choose-description {
     font-size: 16px;
   }
 
-  .choose-right { 
+  .choose-right {
     height: 400px;
   }
 
@@ -712,17 +819,47 @@ nav {
     font-size: 16px;
   }
 
+  .services-section {
+    padding: 50px 20px;
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+
+  .services-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-box {
+    padding: 25px;
+  }
+
+  .service-name {
+    font-size: 18px;
+  }
+
+  .service-emoji {
+    font-size: 35px;
+  }
+
   .why-choose-section {
     padding: 50px 20px;
   }
 
-  .why-choose-container { 
-    flex-direction: column; 
+  .why-choose-container {
+    flex-direction: column;
     text-align: center;
     gap: 30px;
   }
 
-  .badge-choose { 
+  .badge-choose {
     justify-content: center;
     margin: 0 auto 15px;
   }
@@ -731,7 +868,7 @@ nav {
     font-size: 32px;
   }
 
-  .choose-description { 
+  .choose-description {
     margin: 0 auto 25px;
     max-width: 100%;
   }
@@ -741,8 +878,8 @@ nav {
     font-size: 16px;
   }
 
-  .choose-right { 
-    width: 100%; 
+  .choose-right {
+    width: 100%;
     height: auto;
     min-height: 300px;
     margin-top: 20px;
@@ -801,6 +938,22 @@ nav {
 
   .stat-description {
     font-size: 14px;
+  }
+
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-subtitle {
+    font-size: 15px;
+  }
+
+  .service-box {
+    padding: 20px;
+  }
+
+  .service-list li {
+    font-size: 15px;
   }
 
   .why-choose-section {
